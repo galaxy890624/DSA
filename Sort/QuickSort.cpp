@@ -67,11 +67,16 @@ int main()
     Solution Sol;
     // Test case
     vector<int> nums = {39, 11, 48, 5, 77, 18, 70, 25, 55, 33};
+    vector<int> nums2 = {-4, 0, 7, 4, 9, -5, -1, 0, -7, -1};
     for(int i = 0; i < nums.size(); i++)
     {
         cout << Sol.sortArray(nums)[i] << " ";
     }
     cout << endl;
-    
+    for(int i = 0; i < nums2.size(); i++)
+    {
+        cout << Sol.sortArray(nums2)[i] << " ";
+    }
+    cout << endl;
     return 0;
 }
