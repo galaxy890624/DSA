@@ -36,8 +36,9 @@ public:
         int n = nums.size();
 
         // Build max heap (rearrange array)
-        for (int i = n / 2 - 1; i >= 0; i--)
+        for (int i = n / 2 - 1; i >= 0; i--){
             heapify(nums, n, i);
+        }
 
         // Extract elements from heap one by one
         for (int i = n - 1; i > 0; i--) {
